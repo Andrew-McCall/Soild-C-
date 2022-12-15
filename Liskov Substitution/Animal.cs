@@ -8,7 +8,7 @@ namespace SOILD.Liskov_Substitution.Bad
     {
         public static void LearnToFly(Bird bird)
         {
-            if ( bird is Pengiun)
+            if (bird is Owl)
             {
                 bird.Fly();
             }

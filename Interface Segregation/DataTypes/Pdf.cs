@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOILD.Interface_Segregation.DataTypes
 {
-    class Pdg
+    class Pdf
     {
     }
 }

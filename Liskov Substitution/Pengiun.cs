@@ -8,7 +8,7 @@ namespace SOILD.Liskov_Substitution
     {
         public override void Fly()
         {
-            throw new NotImplementedException();
+            throw new InvalidOperationException();
         }
 
     }

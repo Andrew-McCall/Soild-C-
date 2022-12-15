@@ -6,5 +6,13 @@ namespace SOILD.Dependency_Inversion
 {
     class Phone
     {
+        public void Alert(string weather)
+        {
+            if (weather.Equals("sunny"))
+            {
+                Console.WriteLine("It is sunny.");
+            }
+        }
+
     }
 }
