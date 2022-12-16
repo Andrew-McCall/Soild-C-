@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SOILD.Interface_Segregation
 {
-    class PdfConverter : SpreadsheetConverter
+    class PdfConverter : IConvertToPdf
     {
 
         public Pdf CsvToPdf(Csv csv)
@@ -18,16 +18,6 @@ namespace SOILD.Interface_Segregation
         {
             // Conversion Logic
             return new Pdf();
-        }
-
-        public Csv ExcelToCsv(Excel excel)
-        {
-            throw new InvalidOperationException();
-        }
-
-        public Excel CsvToExcel(Csv csv)
-        {
-            throw new NotImplementedException();
         }
 
     }

@@ -6,11 +6,11 @@ namespace SOILD.Single_Responsibility
 {
     class Mechanic
     {
-        // TODO - Returns a price based milage of the car being "fixed"
+
         public double Repair(Car car)
         {
-            throw new NotImplementedException();
+            return car.Mileage * 0.002;
         }
-
+        
     }
 }

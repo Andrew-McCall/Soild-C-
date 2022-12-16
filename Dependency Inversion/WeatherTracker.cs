@@ -8,14 +8,12 @@ namespace SOILD.Dependency_Inversion
     {
         public string Conditions { set; get;}
 
-        public void CreatePhoneAlert(Phone phone)
-        {
-            phone.Alert(Conditions);
-        }
+        // ArrayList Of INotifers
+        // On the set of conditions - loops through list and all
 
-        public void CreateEmailAlert(Email email)
+        public void Notify(INotifier device)
         {
-            email.Alert(Conditions);
+            device.Alert(this.Conditions);
         }
 
     }

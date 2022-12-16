@@ -4,9 +4,8 @@ using System.Text;
 
 namespace SOILD.Dependency_Inversion
 {
-    class Email
+    class Email : INotifier
     {
-
         public void Alert(string weather)
         {
             if (weather.Equals("rainy"))

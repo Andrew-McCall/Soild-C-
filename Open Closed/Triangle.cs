@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SOILD.Open_Closed.Bad
+namespace SOILD.Open_Closed
 {
-    class Rectangle : IShape
+    class Triangle : IShape
     {
-        public double Length { set; get; }
 
+        public double Height { set; get; }
         public double Width { set; get; }
 
-        public Rectangle(double length, double width)
+        public Triangle(double height, double width)
         {
-            this.Length = length;
+            this.Height = height;
             this.Width = width;
         }
 
         public double CalculateArea()
         {
-            return Length * Width;
+            return this.Height * this.Width * 0.5;
         }
 
     }

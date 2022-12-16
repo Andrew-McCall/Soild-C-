@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SOILD.Liskov_Substitution.Bad
+namespace SOILD.Liskov_Substitution
 {
     class Animal
     {
-        public static void LearnToFly(Bird bird)
+        public void LearnToFly(FlyingBird bird)
         {
-            if (bird is Owl)
-            {
-                bird.Fly();
-            }
+           bird.Fly();
         }
+
     }
 }

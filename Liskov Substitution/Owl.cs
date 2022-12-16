@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOILD.Liskov_Substitution
 {
-    class Owl : Bird
+    class Owl : FlyingBird
     {
         public override void Fly()
         {

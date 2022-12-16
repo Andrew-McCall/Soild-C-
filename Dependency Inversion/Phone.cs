@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOILD.Dependency_Inversion
 {
-    class Phone
+    class Phone : INotifier
     {
         public void Alert(string weather)
         {

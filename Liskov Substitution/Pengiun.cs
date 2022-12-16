@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SOILD.Liskov_Substitution
 {
-    class Pengiun : Bird
+    class Pengiun : IFlightlessBird
     {
-        public override void Fly()
+        public void Flap()
         {
-            throw new InvalidOperationException();
+            Console.WriteLine("Flap Flap");
         }
 
     }

@@ -4,14 +4,18 @@ using System.Text;
 
 namespace SOILD.Open_Closed.Bad
 {
-    class Circle
+    class Circle : IShape
     {
-        public Double Radius { set; get; }
+        public double Radius { set; get; }
 
-        public Circle(Double radius)
+        public Circle(double radius)
         {
             this.Radius = radius;
         }
 
+        public double CalculateArea()
+        {
+            return this.Radius * this.Radius * Math.PI;
+        }
     }
 }

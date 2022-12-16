@@ -5,12 +5,8 @@ using SOILD.Interface_Segregation.DataTypes;
 
 namespace SOILD.Interface_Segregation
 {
-    interface SpreadsheetConverter
+    interface IConvertCsvToExcel
     {
-        public Csv ExcelToCsv(Excel excel);
         public Excel CsvToExcel(Csv csv);
-        public Pdf ExcelToPdf(Excel excel);
-        public Pdf CsvToPdf(Csv csv);
-
     }
 }
