@@ -9,7 +9,7 @@ namespace SOILD.Single_Responsibility
         // TODO - Returns a price based milage of the car being "fixed"
         public double Repair(Car car)
         {
-            return null;
+            throw new NotImplementedException();
         }
 
     }
