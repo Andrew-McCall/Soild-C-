@@ -6,16 +6,10 @@ namespace SOILD.Single_Responsibility
 {
     class Driver
     {
-        public Car Car { get; set; }
 
-        public Driver(Car car)
+        public void Drive(double miles, Car car)
         {
-            this.Car = car;
-        }
-
-        public void Drive(double miles)
-        {
-            this.Car.Mileage += miles;
+            car.Mileage += miles;
         }
 
     }
